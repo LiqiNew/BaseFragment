@@ -26,10 +26,21 @@ public abstract class BaseFragment extends Fragment implements OnClickListener {
     private View view;
     private Object mData;
 
-    public <V extends Object > V getData() {
+    /**
+     * 取出第三方对象
+     *
+     * @param <V>
+     * @return
+     */
+    public <V extends Object> V getData() {
         return (V) mData;
     }
 
+    /**
+     * BaseFragment内部存储一个第三方对象
+     *
+     * @param data 第三方对象
+     */
     public void setData(Object data) {
         mData = data;
     }
@@ -128,7 +139,10 @@ public abstract class BaseFragment extends Fragment implements OnClickListener {
     int setLiayoutId();
 
     /**
-     * fragment页面显示调用的方法?
+     * fragment页面显示调用的方法。
+     * <p>
+     *     此方法让继承子类根据业务去操作。
+     * </p>
      */
     public void onShow() {
 
