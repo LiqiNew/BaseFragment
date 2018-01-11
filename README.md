@@ -2,6 +2,10 @@
 [![](https://img.shields.io/badge/%E4%BD%9C%E8%80%85-%E6%9D%8E%E5%A5%87-orange.svg)](https://github.com/LiqiNew)
 # BaseFragment
 BaseFragment基类工具
+
+### 内部远程依赖Library（已经远程依赖的Library，切勿重复依赖。）
+**appcompat-v7：'com.android.support:appcompat-v7:25.3.1'**<br>
+
 #### Gradle远程依赖
 **1：在项目根目录build.gradley**	<br>
 
